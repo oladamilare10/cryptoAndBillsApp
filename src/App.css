@@ -1,0 +1,34 @@
+.spinner {
+  height: 36px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.spinner:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.spinner.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes spinner-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .spinner {
+    animation: logo-spin infinite 2s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
